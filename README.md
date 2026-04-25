@@ -40,7 +40,6 @@ Follow these instructions to run the Planify application locally.
 
 ### Prerequisites
 - [Java Development Kit (JDK) 17+](https://adoptium.net/)
-- [Node.js (v18+)](https://nodejs.org/)
 - [MySQL Server](https://dev.mysql.com/downloads/mysql/)
 
 ### 1. Database Setup
@@ -111,4 +110,4 @@ The application uses state-of-the-art **JSON Web Tokens (JWT)** for security:
 
 ---
 
-*Built with ❤️ and designed for productivity.*
+
