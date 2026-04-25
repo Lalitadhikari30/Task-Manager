@@ -2,7 +2,7 @@
 
 Planify is a modern, production-grade, full-stack Task Management application designed to help teams organize, track, and execute their goals seamlessly. It features a robust backend built with Java Spring Boot and a beautiful, highly animated React frontend.
 
-![Planify UI Overview](frontend/public/favicon.svg)
+
 
 ## 🚀 Features
 
