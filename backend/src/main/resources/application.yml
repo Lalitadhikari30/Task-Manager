@@ -1,0 +1,36 @@
+# ============================
+# Task Manager Backend Config
+# ============================
+
+server:
+  port: 8080
+
+spring:
+  application:
+    name: task-manager
+
+  # --- MySQL Datasource ---
+  # Spring uses this to connect to your MySQL database
+  datasource:
+    url: jdbc:mysql://localhost:3306/taskmanager_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: Lalit9968@
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  # --- JPA / Hibernate ---
+  # Hibernate is the ORM that maps Java objects <-> database tables
+  jpa:
+    hibernate:
+      ddl-auto: update          # Auto-creates/updates tables based on entity classes
+    show-sql: true              # Prints SQL queries to console (helpful for learning)
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true        # Pretty-prints SQL in console
+
+# --- JWT Configuration ---
+# Custom properties (not Spring-managed), we'll read these in JwtUtil.java
+app:
+  jwt:
+    secret: TaskManager2024SecretKeyForJWTTokenGenerationAndValidationHS256Algorithm
+    expiration: 86400000        # 24 hours in milliseconds
